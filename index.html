@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Venda seu computador</title>
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>TechTroca</h1>
+            <h3>Cadastre seu computador para vender mais rápido!</h3>
+        </div>
+        <div class="form-container">
+            <div class="form-header">
+                <p>Formulário</p>
+            </div>
+            <div class="form-body">
+                <h1 class="form-title">Venda fácil seu computador!</h1>
+                <p>Descreva as características e marque os opcionais que ele possui.</p>
+                <form>
+                    <div class="box-input">
+                        <label for="title">Título do anúncio <span class="required-field">*</span></label>
+                        <input type="text" name="title" id="title" class="block" placeholder="Um título para anunciar seu computador" minlength="1" maxlength="30" required />
+                    </div>
+                    <div class="box-input">
+                        <label for="price">Preço <span class="required-field">*</span></label>
+                        <input type="number" name="price" id="price" class="block" placeholder="Defina o preço" required />
+                    </div>
+                    <div class="box-input">
+                        <label for="description">Descrição <span class="required-field">*</span></label>
+                        <textarea name="description" id="description" class="block" placeholder="Aqui você coloca os detalhes do computador, por exemplo: se ele tem algum defeito"></textarea>
+                    </div>
+                    <div class="box-input">
+                        <label for="brand">Marca <span class="required-field">*</span></label>
+                        <input type="text" name="brand" id="brand" class="block" placeholder="Digite a marca do computador" required />
+                    </div>
+                    <div class="box-input">
+                        <label for="model">Modelo <span class="required-field">*</span></label>
+                        <input type="text" name="model" id="model" class="block" placeholder="Digite o modelo do computador" required />
+                    </div>
+                    <div class="box-input">
+                        <label for="processor">Processador <span class="required-field">*</span></label>
+                        <input type="text" name="processor" id="processor" class="block" placeholder="Digite o modelo do processador" required />
+                    </div>
+                    <div class="box-input">
+                        <label for="ram">Memória RAM <span class="required-field">*</span></label>
+                        <input type="number" name="ram" id="ram" class="block" placeholder="Digite a quantidade de RAM em GB" required />
+                    </div>
+                    <div class="box-input">
+                        <label for="storage">Armazenamento <span class="required-field">*</span></label>
+                        <input type="text" name="storage" id="storage" class="block" placeholder="Digite o tipo e quantidade de armazenamento (HDD/SSD e GB)" required />
+                    </div>
+                    <div class="box-input">
+                        <label for="gpu">Placa de Vídeo <span class="required-field">*</span></label>
+                        <input type="text" name="gpu" id="gpu" class="block" placeholder="Digite o modelo da placa de vídeo" required />
+                    </div>
+                    <div class="box-input">
+                        <p>Sistema Operacional: <span class="required-field">*</span></p>
+                        <input type="radio" id="windows" name="os" required />
+                        <label for="windows">Windows</label>
+                        <input type="radio" id="macos" name="os" required />
+                        <label for="macos">macOS</label>
+                        <input type="radio" id="linux" name="os" required />
+                        <label for="linux">Linux</label>
+                    </div>
+                    <div class="optional-box">
+                        <p>Opcionais</p>
+                        <ul class="optional-list">
+                            <li>
+                                <input type="checkbox" id="warranty" name="optional[]" value="warranty" />
+                                <label for="warranty">Garantia</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="peripherals" name="optional[]" value="peripherals" />
+                                <label for="peripherals">Periféricos Incluídos</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="software" name="optional[]" value="software" />
+                                <label for="software">Software Adicional</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="backup" name="optional[]" value="backup" />
+                                <label for="backup">Backup Incluído</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="box-input">
+                        <p>Fotos do computador: <span class="required-field">*</span></p>
+                        <input type="file" multiple accept="image/png, image/jpg" id="images" name="images" required />
+                    </div>
+                    <div class="box-input">
+                        <button type="submit" class="btn-submit">Enviar Anúncio</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
